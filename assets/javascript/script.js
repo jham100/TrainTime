@@ -30,7 +30,6 @@ database.ref().on("child_added", function(childSnapshot) {
     var Tdest = childSnapshot.val().destination;
     var Tfirst = childSnapshot.val().first;
     var Tfreq = childSnapshot.val().frequency;
-    var Tnext = ;
 
     var newrow = $("<tr>");
     newrow.append("<td>"+Tname);
