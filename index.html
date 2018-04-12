@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container">
+        <div class="card">
+                <h1 class= " jumb jumbotron text-white text-center">TrainTime</h1>
+                <h3 class="card-header">Upcoming Trains</h3>
+                  <p></p>
+            <table>
+              <thead> 
+                <th class="card-text">Train Name</th>
+                <th class="card-text">Destination</th>
+                <th class="card-text">First Train Time</th>                
+                <th class="card-text">Frequency -- in minutes</th>
+              </thead>  
+              <tbody id="newrow" class="card-body">
+
+                </tbody>
+              </table>
+<p></p>
+
+              </div>
+                
+      <div id ="input" class="card"> 
+        <h3 class="card-header">Add Train</h3>          
+        <p class="card-text">Train Name</p>     
+        <input type="text"id="name" data-value="">   
+        <p class="card-text">Destination</p>
+        <input type="text"id="destination" data-value="">                  
+        <p class="card-text">First Train Time</p>
+        <input type="text"id="first" data-value="">  
+        <p class="card-text">Frequency -- in minutes</p>
+        <input  class="card-text"type="text"id="frequency" data-value="">  
+      <p></p>
+      <button class="btn" id="add">Add Train</button>
+      </div>
+  
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD37a9rUMCweOr4H1M6kCWle2xgmejumHc",
+        authDomain: "traintime-d4b5c.firebaseapp.com",
+        databaseURL: "https://traintime-d4b5c.firebaseio.com",
+        projectId: "traintime-d4b5c",
+        storageBucket: "traintime-d4b5c.appspot.com",
+        messagingSenderId: "851522431908"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+  </body>
+</html>

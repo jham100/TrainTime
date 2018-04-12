@@ -1,0 +1,8 @@
+ .jumbotron {
+     background: darkblue;
+     font-weight: 800;
+     background-image: url("images/bear.jpg");
+     padding: 100px;
+    }
+th {width: 20%; padding: 5px}
+td {padding: 5px}
